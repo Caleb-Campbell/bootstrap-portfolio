@@ -1,0 +1,11 @@
+
+=== Basic Layout ===
+- Title Section
+- About Section
+- Project Section
+- Contact Info
+
+=== Functionality === 
+- Resume opens modal, can enter email address which will send an automatic email to the box with a letter of rec, and resume
+- About section highlights with different tabs
+- Projecs section includes different cards
