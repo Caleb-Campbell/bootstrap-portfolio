@@ -5,14 +5,16 @@ import reactLogo from './assets/react.svg'
 import NavBar from './components/NavBar'
 import TitlePage from './components/TitlePage'
 import Projects from './components/Projects'
+import About from './components/About'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <NavBar />
+    <NavBar/>
     <TitlePage />
+    <About />
     <Projects />
     </>
   )
