@@ -10,20 +10,16 @@ export default function Projects() {
 
   return (
     <>
-    <Container style={{display: 'flex', flexFlow: 'row wrap'}} >
+    <Container style={{display: 'flex', flexFlow: 'row wrap', width: '90%', margin: '0 auto'}} >
         {projects.map(project => {
             return (
-                <>
-                {/* <Col key={project.id} md='5' sm='5'> */}
-                <Card className='w-50 m-.1'>
+                <Card style={{maxWidth: '30%'}} className='w-50 m-1'>
                     <Card.Body>
-                        <Card.Title>{project.name}</Card.Title>
-                        <Card.Text className='text-info'>{project.description}</Card.Text>
-                        <Card.Link href={project.link} >View</Card.Link>
+                        <Card.Title className='text-primary fw-bold'>{project.name}</Card.Title>
+                        <Card.Text className='text-dark'>{project.description}</Card.Text>
+                        <Card.Link  href={project.link} >View</Card.Link>
                     </Card.Body>
                 </Card>
-                {/* </Col> */}
-                </>
             )
         })}
     </Container>
