@@ -4,6 +4,7 @@ import { Tabs, Tab, Stack, Button } from 'react-bootstrap'
 export default function About() {
   return (
     <div style={{width: '50%', margin: '0 auto', marginTop: '5em', marginBottom: '5em'}} id='about'>
+        <h2 style={{textAlign: 'center'}} className='mb-3 fw-bold text-light'>About</h2>
         <Tabs
         defaultActiveKey='profile'
         id='uncontrolled-tab-example'
@@ -35,7 +36,7 @@ export default function About() {
                 <p className='mt-3'>
                 I do a few things: Chess, Models, and Hydroponics.
                 </p>
-                <Button variant='secondary'>See My Hydroponics</Button>
+                <Button href='https://www.instagram.com/ppp__official_/' variant='secondary'>See My Hydroponics</Button>
             </Tab>
 
         </Tabs>
