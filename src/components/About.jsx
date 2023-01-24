@@ -1,5 +1,7 @@
 import React from 'react'
-import { Tabs, Tab, Stack, Button } from 'react-bootstrap'
+import { Tabs, Tab, Stack, Button, Carousel, Container, CarouselItem } from 'react-bootstrap'
+
+
 
 export default function About() {
   return (
@@ -28,9 +30,7 @@ export default function About() {
                 <Button variant='secondary'>See My Work</Button>
             </Tab>
             <Tab eventKey='skills' title='Skills'>
-                <p className='mt-3'>
-                I use React, Express, and SQL to create projects that make me really happy.
-                </p>
+                
             </Tab>
             <Tab eventKey='hobbies' title='Hobbies'>
                 <p className='mt-3'>
