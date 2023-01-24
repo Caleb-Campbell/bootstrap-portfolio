@@ -12,7 +12,7 @@ export default function NavBar({darkMode, setDarkMode}) {
 
 
   return (
-    <Nav  className={`justify-content-between p-3 ${darkMode ? 'bg-light' : 'bg-dark'}`}>
+    <Nav id='nav' className={`justify-content-between p-3 ${darkMode ? 'bg-light' : 'bg-dark'}`}>
     <Image style={{width: '5em'}} src={darkMode ? darkLogo : lightLogo} />
     <Stack direction='horizontal'>
     <Nav.Item>
