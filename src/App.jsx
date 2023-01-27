@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import WorkExperience from './components/WorkExperience'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
     <About />
     <Projects darkMode={darkMode} />
     <WorkExperience />
+    <Contact />
     </Stack >
     <Footer darkMode={darkMode} />
     </div>
