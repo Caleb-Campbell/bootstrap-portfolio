@@ -10,17 +10,22 @@ import About from './components/About'
 import WorkExperience from './components/WorkExperience'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import ResumeModal from './components/ResumeModal'
 
 function App() {
   const [count, setCount] = useState(0)
   const [darkMode, setDarkMode] = useState(false)
+  const [modal, setModal] = useState(false)
+  const [email, setEmail] = useState('')
 
-
-  
+  const sendEmail = () => {
+    
+  }
 
   return (
     <div className={darkMode ? 'bg-dark' : 'bg-light'}>
-    <NavBar darkMode={darkMode} setDarkMode={setDarkMode}/>
+    <ResumeModal email={email} setEmail={setEmail} show={modal} setShow={setModal} />
+    <NavBar setModal={setModal} darkMode={darkMode} setDarkMode={setDarkMode}/>
     <Stack gap={5}>
     <TitlePage darkMode={darkMode} />
     <About />

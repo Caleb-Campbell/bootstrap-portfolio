@@ -3,12 +3,15 @@ import { Nav, Stack, Button, Image, ButtonGroup } from 'react-bootstrap'
 import lightLogo from '../assets/simple-white-caleb-campbell.png'
 import darkLogo from '../assets/icons/dark.png'
 
-export default function NavBar({darkMode, setDarkMode}) {
+export default function NavBar({darkMode, setDarkMode, setModal}) {
 
   const handleClick = (e) => {
     setDarkMode(!darkMode)
   }
 
+  const openResumeSide = () => {
+    setModal(true)
+  } 
 
 
   return (
@@ -27,11 +30,8 @@ export default function NavBar({darkMode, setDarkMode}) {
     <Nav.Item>
       <Nav.Link className={darkMode ? 'text-dark' : 'text-light' }  href="/home">Contact</Nav.Link>
     </Nav.Item>
-    <ButtonGroup style={{scale: '.5'}}>
-      <Button onClick={handleClick} id='dark' className='fs-2'>{darkMode ? '🌕' : '🌚'}</Button>
-
-      
-    </ButtonGroup>
+      <Button onClick={openResumeSide} style={{scale: '.6'}} className='fs-3' >Resume</Button>
+      <Button onClick={handleClick} id='dark' className='fs-2' style={{scale: '.5'}}>{darkMode ? '🌕' : '🌚'}</Button>      
     </Stack>
 
     </Nav>
