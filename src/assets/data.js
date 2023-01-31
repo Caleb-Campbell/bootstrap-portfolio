@@ -42,6 +42,23 @@ const data = [
         open: false
 
     },
+    {
+        id: 6,
+        name: `Family Promise Non-Profit`,
+        description: `I worked with a team on Jira to create a web application for Family Promise Case Workers to track and view the needs of families. It is an ongoing project and very extensive with frontend, backend, and data science teams working and communicating together. I have developed several of the features and components found in the project`,
+        link: `https://github.com/BloomTech-Labs/family-promise-case-mgmt-fe`,
+        skills: ['React', 'CSS', 'Jira', 'Agile', 'Communication'],
+        open: false
+    },
+    {
+        id: 7,
+        name: 'Client Image Hosting',
+        description: 'While doing freelance jobs, I found it was very tedious manually inserting images for sites, so I have begun building a service that allows users to host images online, then inserting the image and optional text through a REST API the app creates.',
+        link: 'https://github.com/Caleb-Campbell/client-image-hosting-backend',
+        skills: ['JavaScript', 'React', 'ExpressJS', 'PostgreSQL', 'Auth0'],
+        open: false
+    }
+
 ]
 
 
